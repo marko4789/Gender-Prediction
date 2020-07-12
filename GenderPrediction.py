@@ -1,6 +1,6 @@
 from sklearn import tree
 
-x = [[181, 80, 44],
+X = [[181, 80, 44],
      [177, 70, 43],
      [160, 60, 38],
      [154, 54, 37],
@@ -23,3 +23,8 @@ y = ["Male",
      "Male",
      "Female",
      "Male"]
+
+model = tree.DesicionTreeClassifier()
+model = model.fit(X, y)
+
+print(clf.predict([171, 75, 42]))
