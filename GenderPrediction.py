@@ -27,4 +27,4 @@ y = ["Male",
 model = tree.DesicionTreeClassifier()
 model = model.fit(X, y)
 
-print(clf.predict([171, 75, 42]))
+print(model.predict([171, 75, 42]))
