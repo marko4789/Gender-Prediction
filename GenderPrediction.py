@@ -13,18 +13,18 @@ X = [[181, 80, 44],
      [181, 85, 43]]
 
 y = ["Male",
-     "Female",
+     "Male",
      "Female",
      "Female",
      "Male",
      "Male",
-     "Male",
+     "Female",
+     "Female",
      "Female",
      "Male",
-     "Female",
      "Male"]
 
-model = tree.DesicionTreeClassifier()
+model = tree.DecisionTreeClassifier()
 model = model.fit(X, y)
 
-print(model.predict([171, 75, 42]))
+print(model.predict([[172, 89, 41.5]]))
